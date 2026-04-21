@@ -200,7 +200,7 @@ docker compose up -d
 ## 🗺️ Roadmap
 
 - [x] **Sprint 0** — Planejamento e definição de escopo
-- [ ] **Sprint 1** — Ingestão, modelagem dimensional e carga no DuckDB
+- [x] **Sprint 1** — Ingestão, modelagem dimensional e carga no DuckDB
 - [ ] **Sprint 2** — Transformações dbt (staging → marts) + testes de qualidade
 - [ ] **Sprint 3** — Dashboards (Superset + Looker) e PDF executivo
 
