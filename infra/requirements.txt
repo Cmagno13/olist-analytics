@@ -1,0 +1,41 @@
+# ============================================================
+# Olist Analytics — Dependências Python
+# Python 3.11+
+# ============================================================
+
+# ---------- Data Warehouse & Database ----------
+duckdb==1.1.3
+sqlalchemy==2.0.36
+
+# ---------- Ingestão & Manipulação de dados ----------
+pandas==2.2.3
+pyarrow==18.1.0
+numpy==2.2.0
+
+# ---------- Download do dataset (Kaggle) ----------
+kaggle==1.6.17
+
+# ---------- dbt com adaptador DuckDB ----------
+dbt-core==1.8.9
+dbt-duckdb==1.8.4
+
+# ---------- Jupyter & Análise exploratória ----------
+jupyterlab==4.3.3
+ipykernel==6.29.5
+matplotlib==3.10.0
+seaborn==0.13.2
+plotly==5.24.1
+
+# ---------- Output bonito no terminal ----------
+rich==13.9.4
+tqdm==4.67.1
+
+# ---------- Validação de dados ----------
+pydantic==2.10.3
+
+# ---------- Variáveis de ambiente ----------
+python-dotenv==1.0.1
+
+# ---------- Qualidade de código (dev) ----------
+ruff==0.8.3
+pytest==8.3.4
