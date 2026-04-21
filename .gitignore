@@ -1,0 +1,94 @@
+# ============================================================
+# Olist Analytics — .gitignore
+# ============================================================
+
+# ---------- Dados brutos e warehouse (NUNCA commitar) ----------
+data/raw/*
+!data/raw/.gitkeep
+data/warehouse/*
+!data/warehouse/.gitkeep
+
+# Arquivos DuckDB
+*.duckdb
+*.duckdb.wal
+
+# Arquivos CSV/Parquet soltos
+*.csv
+*.parquet
+*.arrow
+*.feather
+!docs/**/*.csv
+
+# ---------- Credenciais e segredos ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+credentials.json
+service-account*.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---------- dbt ----------
+dbt_olist/target/
+dbt_olist/dbt_packages/
+dbt_olist/logs/
+dbt_olist/.user.yml
+
+# ---------- Docker / Superset ----------
+superset_home/
+superset.db
+docker/volumes/
+
+# ---------- IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---------- Logs e temporários ----------
+*.log
+logs/
+tmp/
+temp/
+
+# ---------- Coverage e testes ----------
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
